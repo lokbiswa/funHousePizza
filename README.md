@@ -1,2 +1,2 @@
 # funHousePizza
- Building a better site for Fun House Pizza. 
+ Building a better site for the Fun House Pizza. 
