@@ -1,9 +1,12 @@
-.categories{
-    height:100vh;
+body {
+  margin-top: 2.5rem;
 }
-section div{
-    margin:auto;
-} 
-.card{
-    margin:2.5rem;
+.categories {
+  height: 100vh;
+}
+section div {
+  margin: auto;
+}
+.card {
+  margin: 2.5rem;
 }
