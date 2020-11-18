@@ -10,3 +10,11 @@ section div {
 .card {
   margin: 2.5rem;
 }
+.thumb-link {
+  align-items: center;
+  justify-content: center;
+}
+.thumb-link:hover {
+  background: linear(transparent 5%, rgba(254, 209, 54, 0.9) 100%);
+  transition: opacity ease-in-out 0.25s;
+}
