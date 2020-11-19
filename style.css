@@ -1,20 +1,53 @@
 body {
   margin-top: 2.5rem;
+  background-color: #f1faee;
+  opacity: 2;
 }
 .categories {
-  margin: 2.5rem;
+  margin: 0.25rem;
 }
-section div {
+section {
   margin: auto;
 }
+.card-body {
+  height: 5rem;
+}
 .card {
-  margin: 2.5rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  width: 25rem;
+  height: 5rem;
 }
-.thumb-link {
-  align-items: center;
-  justify-content: center;
+.col-4 img {
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-.thumb-link:hover {
-  background: linear(transparent 5%, rgba(254, 209, 54, 0.9) 100%);
-  transition: opacity ease-in-out 0.25s;
+.card-title1 {
+  border: solid 1px #457b9d;
+  border-radius: 1rem;
+  color: #457b9d;
+  background-color: white;
+  padding: 0.5rem;
+  margin: 0 auto 0 auto;
+}
+.card-title1:hover {
+  border: solid 1px #457b9d;
+  border-radius: 0.75rem;
+  color: #f1faee;
+  text-decoration: none;
+  background-color: #457b9d;
+  padding: 0.5rem;
+  margin: 0;
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+.sideNavBa {
+  padding-top: 40px;
+}
+ul {
+  list-style-type: none;
 }
