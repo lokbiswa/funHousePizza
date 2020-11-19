@@ -6,7 +6,7 @@ header.masthead {
   background-image: url("images/fun-house-pizza-40-highway-Google-Search.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   height: 500px;
 }
@@ -17,21 +17,20 @@ body {
   padding: 0;
 }
 
-.container-fluid {
+.container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 #intro {
-  font-family: 'Merienda One', cursive;
   position: relative;
   width: 100%;
   height: 400px;
-  padding: 40px 40px;
-  margin: 0 auto;
-  text-align: center; 
-  background-color: #E63946;
+  padding: 80px 40px;
+  margin: auto;
+  text-align: center;
+  background-color: #e63946;
   color: white;
   z-index: 0;
 }
@@ -39,113 +38,44 @@ body {
 #intro:after {
   position: absolute;
   width: 100%;
-  height: 100%;
-  content:'';
   background: inherit;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  color: inherit;
   transform-origin: top left;
   transform: skewY(4deg);
-  z-index: -1;
-}
-
-#intro:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content:'';
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top right;
-  transform: skewY(4deg);
-  z-index: 0;
-}
-
-#intro p {
-  font-size: 1.6rem;
-  padding: 20px 100px;
-}
-
-#intro h1 {
-  font-size: 4.4em;
+  /* z-index: 0; */
 }
 
 .btn {
-  background-color: #457B9D;
+  background-color: #457b9d;
   color: white;
   margin: 0 auto;
+  z-index: 5;
+}
+
+p {
+  z-index: 5;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 5;
 }
 
 #info {
   background-image: url("images/Circus-Poster - adjusted.svg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: auto;
-  height: 700px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 200px;
+  background-size: cover;
+  height: 500px;
+  margin: 0 50px;
+  display: block;
 }
-
-#hours {
-  margin: 0 auto;
-}
-
-#contact {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-#dailySpecials {
-  font-family: 'Merienda One', cursive;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  padding: 40px 40px;
-  margin: 0 auto;
-  text-align: center; 
-  background-color: #A8DADC;
-  color: white;
-  z-index: 0;
-}
-
-#dailySpecials:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content:'';
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: skewY(-4deg);
-  z-index: -1;
-}
-
-#dailySpecials:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content:'';
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top right;
-  transform: skewY(-4deg);
-  z-index: 0;
-}
-
 
 /*--------------------------------------------------------------
 # Hero Section
