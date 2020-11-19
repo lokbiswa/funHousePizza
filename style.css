@@ -1,3 +1,6 @@
+/***************** MASTHEAD **********
+****************************************/
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 5rem;
@@ -10,6 +13,81 @@ header.masthead {
   background-size: cover;
   height: 600px;
 }
+
+/***************** NAVIGATION **********
+****************************************/
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 60px;
+  background-color: #1D3557;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-family: 'Mukta', sans-serif;
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #457B9D;
+  border: 0;
+}
+#mainNav .navbar-brand {
+  color: #457B9D;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: 'Mukta', sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #E63946;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1D3557;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+/************* END OF NAVIGATION ************/
 
 body {
   width: 100%;
@@ -50,6 +128,9 @@ h1, h2 {
   z-index: 0;
 }
 
+/******* INTRODUCTION SECTION ***********
+****************************************/
+
 #intro img {
   position: absolute;
   top: 25px;
@@ -67,8 +148,8 @@ h1, h2 {
 
 #starburst2 {
   opacity: .19;
-  width: 270px;
-  top: 0px;
+  width: 410px;
+  top: 0;
   left: 10px;
   transform: rotate(23deg);
 }
@@ -126,6 +207,9 @@ h1, h2 {
   margin: 0 auto;
   text-shadow: none;
 }
+
+/************** INFO SECTION ***********
+****************************************/
 
 #info {
   background-image: url("images/Circus-Poster - adjusted.svg");
