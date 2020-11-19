@@ -8,13 +8,28 @@ header.masthead {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 600px;
+  transform: rotate(-25deg);
 }
 
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h1, h2 {
+  font-family: 'Merienda One', cursive;
+}
+
+.row { 
+  width: 70%;
 }
 
 .container-fluid {
@@ -24,7 +39,6 @@ body {
 }
 
 #intro {
-  font-family: 'Merienda One', cursive;
   position: relative;
   width: 100%;
   height: 400px;
@@ -33,6 +47,7 @@ body {
   text-align: center; 
   background-color: #E63946;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
   z-index: 0;
 }
 
@@ -79,6 +94,7 @@ body {
   background-color: #457B9D;
   color: white;
   margin: 0 auto;
+  text-shadow: none;
 }
 
 #info {
@@ -104,7 +120,6 @@ body {
 }
 
 #dailySpecials {
-  font-family: 'Merienda One', cursive;
   position: relative;
   width: 100%;
   height: 400px;
@@ -113,6 +128,7 @@ body {
   text-align: center; 
   background-color: #A8DADC;
   color: white;
+  text-shadow: 2px 2px 4px #1D3557;
   z-index: 0;
 }
 
@@ -131,6 +147,7 @@ body {
   z-index: -1;
 }
 
+/*************************
 #dailySpecials:before {
   position: absolute;
   width: 100%;
@@ -144,6 +161,13 @@ body {
   transform-origin: top right;
   transform: skewY(-4deg);
   z-index: 0;
+}
+**************************/
+
+
+#footer {
+  background-color: #1D3557;
+  height: 100px;
 }
 
 
