@@ -65,24 +65,32 @@ section {
   background: rgb(252, 250, 250);
 }
 .container .sideBar ul {
-  padding: 15px;
+  padding: 0;
 }
 .container .sideBar ul li {
-  padding: 15px;
+  padding: 5px;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
 }
 .container .sideBar ul li a {
   display: block;
-  width: 300px;
+  width: 190px;
   color: darkblue;
-  padding: 15px;
+  font-size: 14px;
+  padding: 10px;
 }
 .container .sideBar ul li a:hover {
-  width: 300px;
+  width: 190px;
   color: white;
   background-color: darkblue;
 }
+.container .row {
+  margin: 0;
+  width: 100%;
+}
 .container .card {
+  position: relative;
+  display: flex;
   width: 15rem;
+  height: auto;
 }
