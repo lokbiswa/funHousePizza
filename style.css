@@ -37,6 +37,9 @@ section {
   padding: 0.5rem;
   margin: 0 auto 0 auto;
 }
+.card-title1 i {
+  float: right;
+}
 .card-title1:hover {
   border: solid 1px #457b9d;
   border-radius: 0.75rem;
