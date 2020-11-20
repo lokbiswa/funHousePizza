@@ -14,9 +14,8 @@ header.masthead {
   height: 600px;
 }
 
-
-  header img {
-  width: 130px;
+  #logo {
+  width: 120px;
   position: fixed;
   property: inline-block;
   top: 10px;
@@ -69,7 +68,7 @@ header.masthead {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
- /**   background-color: transparent;  ***/
+    background-color: transparent; 
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
