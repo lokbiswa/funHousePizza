@@ -52,7 +52,6 @@ header.masthead {
   text-transform: uppercase;
 }
 
-
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Mukta', sans-serif;
   font-size: 1.2rem;
@@ -141,10 +140,7 @@ h1, h2, h5 {
 
 #intro img {
   position: absolute;
-  top: 25px;
-  right: 35px;
   color: white;
-  overflow: hidden;
 }
 
 #intro p {
@@ -183,7 +179,7 @@ h1, h2, h5 {
 #starburst3 {
   opacity: .2;
   width: 200px;
-  top: 60;
+  top: 0;
   left: 400px;
   transform: rotate(260deg);
 }
@@ -218,8 +214,7 @@ h1, h2, h5 {
   z-index: 0;
 }
 
-
-/************** INFO SECTION ***********
+/************** INFORMATION SECTION ***********
 ****************************************/
 
 #info {
@@ -245,13 +240,14 @@ h1, h2, h5 {
 #dailySpecials {
   position: relative;
   width: 100%;
-  height: 1000px;
+  height: 750px;
   padding: 40px 0px;
   text-align: center; 
   background-color: #A8DADC;
   color: #E63946;
- text-shadow: 2px 2px 4px #f1d4d6;
+  text-shadow: 2px 2px 4px #f1d4d6;
   z-index: 0;
+  margin: 0 auto;
 }
 
 #dailySpecials:after {
@@ -280,6 +276,10 @@ h1, h2, h5 {
   padding-bottom: 40px;
 }
 
+#dailySpecials h2, #dailySpecials h5  {
+  padding-bottom: 20px;
+}
+
 #dailySpecials p {
   line-height: 1.2em;
 }
@@ -287,6 +287,16 @@ h1, h2, h5 {
 #dailySpecials .btn {
   margin-top: 50px;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+#dailySpecials .row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#lunch {
+  padding-bottom: 50px;
 }
 
 #starburst4 {
@@ -332,42 +342,93 @@ footer p {
 }
 
 
+/************* MEDIA QUERIES  **********
+****************************************/
 
-
-
-
-
-/*************************
-  
-  @media (max-width: 1200px) {
-    #nav-menu-container .row {
-      display: none;
+  @media (max-width: 1450px) {
+    #intro {
+      height: 400px;
+    }      
+    #intro p {
+      width: 90%;
+    }
+    #info {
+      padding-top: 150px;
+    }  
+    #dailySpecials .row {
+      width: 70%;
+    }
+    #lunch {
+      padding-right: 60px;
+    }
+    #nightly {
+      padding-left: 60px;
+    }
+    #dailySpecials {
+      height: 900px;
     }
   }
-  
-  @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #hero h1 {
-      font-size: 56px;
-      line-height: 46px;
-    }
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  }
-  
-  --------------------------------------------------------------*/
+
 
   @media (max-width: 1200px) {
     #intro p {
-      width: 90%;
       padding: 20px 0;
+    } 
+    #dailySpecials {
+      height: 1000px;
     }
+  }
+
+  @media (max-width: 1000px) {
+    #intro {
+      height: 450px;
+    }      
+
+    #dailySpecials {
+      height: 1200px;
+    }
+    #nightly, #lunch {
+      padding-left: 0;
+      padding-right:0;
+    }
+
+    #dailySpecials {
+      height: 1000px;
+    }
+  }
+
+  @media (max-width: 890px) {
+    #starburst1 {
+      display: none;
+    } 
+
+    #specials .row{
+      width: 80%;
+      padding: 0; 
+    }
+
+    #dailySpecials p {
+     font-size: 1.4rem;
+    }
+
+    #dailySpecials .row {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #intro {
+      height: 500px;
+    }
+    #info {
+      padding-top: 120px;
+      height: 850px;
+    } 
+    #hours {
+      margin-bottom: 40px;
+    }
+    #dailySpecials {
+      height: 1200px;
+    }
+  }
    
