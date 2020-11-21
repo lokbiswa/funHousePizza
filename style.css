@@ -62,6 +62,7 @@ section {
   position: relative;
 }
 .container .sideBar {
+  display: fixed;
   background: rgb(252, 250, 250);
 }
 .container .sideBar ul {
@@ -70,27 +71,71 @@ section {
 .container .sideBar ul li {
   padding: 5px;
   border-top: 1px white solid;
-  border-bottom: 1px white solid;
+  border-bottom: 1px rgb(238, 238, 238) solid;
 }
 .container .sideBar ul li a {
   display: block;
-  width: 190px;
-  color: darkblue;
+  width: 200px;
+  color: #1d3557;
   font-size: 14px;
   padding: 10px;
 }
 .container .sideBar ul li a:hover {
-  width: 190px;
+  transition: 0.3sec ease;
   color: white;
-  background-color: darkblue;
+  background-color: #1d3557;
 }
 .container .row {
   margin: 0;
-  width: 100%;
+  width: 120%;
 }
 .container .card {
   position: relative;
   display: flex;
-  width: 15rem;
-  height: auto;
+  max-width: 18rem;
+  height: 22rem;
+  box-shadow: 2px 2px 1px #607a8a27;
+}
+/* .container .card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+} */
+.container .wrapper {
+  width: 100%;
+}
+.container .card .card-body {
+  height: fit-content;
+  padding-top: 0.25rem;
+}
+.container .card .card-body .card-title {
+  text-emphasis: bold;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 0;
+}
+.container .card .card-body .card-text {
+  padding: 0;
+  margin: 0;
+  color: #457b9d;
+}
+.wrapper .category {
+  padding-top: 2rem;
+}
+.container .card .card-body .description {
+  color: #1d3557;
+}
+.price {
+  display: inline-block;
+  background-color: #f1faee;
+}
+.prices {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding-bottom: 0;
+}
+.number {
+  color: #e63946;
+  background-color: #f1faee;
 }
