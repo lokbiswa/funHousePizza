@@ -62,41 +62,7 @@ header.masthead {
   color: #E63946;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: transparent; 
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand img {
-    height: 2rem;
-    transition: height 0.3s ease-in-out;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #1D3557;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-  }
-  #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
-  }
-  #mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
-  }
-  #mainNav .navbar-nav .nav-item:last-child {
-    margin-right: 0;
-  }
-}
+
 /************* END OF NAVIGATION ************/
 
 body {
@@ -224,9 +190,14 @@ h1, h2, h5 {
   background-position: center center;
   background-size: auto;
   height: 670px;
-  text-align: center;
-  margin: 0 auto;
   padding-top: 200px;
+}
+
+#info .row {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
 }
 
 .phone {
@@ -244,7 +215,7 @@ h1, h2, h5 {
   padding: 40px 0px;
   text-align: center; 
   background-color: #A8DADC;
-  color: #E63946;
+  color: #b11c28;
   text-shadow: 2px 2px 4px #f1d4d6;
   z-index: 0;
   margin: 0 auto;
@@ -331,16 +302,28 @@ footer {
   right: 0;
   height: 100px;
   background-color: #1D3557;
-  text-align: center;
   color: white;
-  text-align: center;
-  padding-top: 30px;
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  padding-top: 40px;
+  text-align: center;
 }
 
+footer ul {
+  width: 300px;
+  height: 70px;
+  position: relative;
+  top: -100px;
+  left: 200px;
+  padding-left: 15px;
+}
+
+footer img {
+  width: 60px;
+  padding-left: 20px;
+}
 
 /************* MEDIA QUERIES  **********
 ****************************************/
@@ -367,6 +350,9 @@ footer p {
     #dailySpecials {
       height: 900px;
     }
+    footer ul {
+      left: 100px;
+    }
   }
 
 
@@ -383,7 +369,6 @@ footer p {
     #intro {
       height: 450px;
     }      
-
     #dailySpecials {
       height: 1200px;
     }
@@ -391,9 +376,11 @@ footer p {
       padding-left: 0;
       padding-right:0;
     }
-
     #dailySpecials {
       height: 1000px;
+    }
+    footer ul {
+      left: 20px;
     }
   }
 
@@ -431,4 +418,42 @@ footer p {
       height: 1200px;
     }
   }
-   
+
+
+  /*************** NAVBAR MEDIA QUERIES **************
+  ****************************************************/
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: transparent; 
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #1D3557;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+      height: 1.5rem;
+    }
+    #mainNav .navbar-nav .nav-item {
+      margin-right: 1rem;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+  }
