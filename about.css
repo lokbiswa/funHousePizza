@@ -21,10 +21,11 @@ header.masthead {
     #logo {
     width: 120px;
     position: fixed;
-    property: inline-block;
+    display: inline-block;
     top: 10px;
     left: 40px;
     z-index: 5;
+    
   }
   
   
