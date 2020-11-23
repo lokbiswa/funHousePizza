@@ -110,12 +110,12 @@ section {
   margin: 0;
   width: 100%;
 }
-.card-title1 {
+.categories.card-title1 {
   border: solid 1px #457b9d;
   border-radius: 1rem;
   color: #457b9d;
   background-color: rgb(2255, 255, 255, 0.884);
-  padding: 0.5rem;
+  padding: 0.5rem !important;
   width: 15rem;
   margin: auto;
   margin-left: 0 !important;
@@ -372,4 +372,9 @@ footer ul li {
 }
 html {
   scroll-behavior: smooth;
+}
+@media (max-height: 575px) {
+  .card {
+    width: 12rem;
+  }
 }
