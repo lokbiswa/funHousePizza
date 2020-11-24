@@ -332,14 +332,21 @@ footer ul li {
     left: 20px;
     top: -4px;
   }
+  .container-fluid {
+    padding: 0;
+  }
   .container-fluid .wrapper .filterDiv .card .card-body .card-title {
     font-size: 14px;
+    text-align: center;
+    padding-top: 0;
+    padding-top: -10px;
   }
   .container-fluid .wrapper .filterDiv .card .card-body .description {
     color: #1d3557;
     font-size: 12px;
     visibility: hidden;
     display: none;
+    text-align: center;
   }
   .price {
     display: inline-block;
@@ -347,10 +354,7 @@ footer ul li {
     margin: 0;
   }
   .prices {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    padding-bottom: 0;
+    position: relative;
     font-size: 10px;
   }
   .number {
@@ -359,9 +363,9 @@ footer ul li {
   }
   .container-fluid .wrapper .filterDiv .card {
     max-width: 10rem;
-    height: 12rem;
+    height: 13rem;
     box-shadow: 2px 2px 1px #607a8a27;
-    margin: auto;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
