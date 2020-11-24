@@ -141,25 +141,25 @@ section {
 .sideBar ul {
   list-style-type: none;
 }
-.container {
-  display: flex;
+.container-fluid {
+  display: inline-flex;
   position: relative;
 }
-.container .sideBar {
+.container-fluid .sideBar {
   display: fixed;
   background: rgb(252, 250, 250);
   height: fit-content;
   margin-left: 15px;
 }
-.container .sideBar ul {
+.container-fluid .sideBar ul {
   padding: 0;
 }
-.container .sideBar ul li {
+.container-fluid .sideBar ul li {
   padding: 5px;
   border-top: 1px white solid;
   border-bottom: 1px rgb(238, 238, 238) solid;
 }
-.container .sideBar ul li button {
+.container-fluid .sideBar ul li button {
   display: block;
   width: 200px;
   color: #1d3557;
@@ -167,18 +167,19 @@ section {
   padding: 10px;
   text-align: left;
 }
-.container .sideBar ul li button:hover {
+.container-fluid .sideBar ul li button:hover {
   transition: 0.3sec ease;
   color: white;
   background-color: #457b9d;
 }
-.container .row {
+.container-fluid .row {
   margin: 0;
   width: 130%;
 }
-.container .card {
+.container-fluid .card {
   position: relative;
-  display: flex;
+  padding: 1rem;
+  display: inline-flex;
   max-width: 18rem;
   height: 22rem;
   box-shadow: 2px 2px 1px #607a8a27;
@@ -188,11 +189,11 @@ section {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 } */
-.container .wrapper {
+.container-fluid .wrapper {
   width: 100%;
   margin-bottom: 5rem;
 }
-.container .card .card-body {
+.container-fuild .card .card-body {
   height: fit-content;
   padding-top: 0.25rem;
   padding-left: 0;
@@ -200,13 +201,13 @@ section {
 .card-body {
   padding-left: 0;
 }
-.container .card .card-body .card-title {
+.container-fluid .card .card-body .card-title {
   text-emphasis: bold;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin: 0;
 }
-.container .card .card-body .card-text {
+.container-fluid .card .card-body .card-text {
   padding: 0;
   margin: 0;
   color: #457b9d;
@@ -214,7 +215,7 @@ section {
 /* .wrapper .category {
   padding-top: 2rem;
 } */
-.container .card .card-body .description {
+.container-fluid .card .card-body .description {
   color: #1d3557;
 }
 .price {
