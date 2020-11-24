@@ -65,7 +65,10 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: auto;
+  background-size: cover;
+}
+.container-fluid.row {
+  display: inline-block;
 }
 .contact {
   padding-top: 4rem;
@@ -88,15 +91,20 @@ section {
   height: 5rem;
 }
 .card {
-  margin: 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
   border-radius: 0.25rem;
-  width: 25rem;
+  width: 100%;
   height: 5rem;
 }
 .categories .card {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.884);
+}
+.categories .card .cardbody {
+  height: 100%;
+  width: 100%;
 }
 .categories .card:hover {
   width: 100%;
@@ -111,26 +119,14 @@ section {
   width: 100%;
 }
 .card-title1 {
-  border: solid 1px #457b9d;
-  border-radius: 1rem;
   color: #457b9d;
-  background-color: rgb(2255, 255, 255, 0.884);
-  padding: 0.5rem;
   width: 15rem;
-  margin: auto;
+  padding: 0.5rem;
   margin-left: 0 !important;
+  margin-top: 1rem;
 }
 .card-title1 i {
   float: right;
-}
-.card-title1:hover {
-  border: solid 1px #457b9d;
-  border-radius: 0.75rem;
-  color: #f1faee;
-  text-decoration: none;
-  background-color: #457b9d;
-  padding: 0.5rem;
-  margin: 0;
 }
 .container {
   margin: 0;
@@ -159,22 +155,39 @@ section {
   border-top: 1px white solid;
   border-bottom: 1px rgb(238, 238, 238) solid;
 }
+.sideBar {
+  width: 500px;
+}
 .container-fluid .sideBar ul li button {
   display: block;
-  width: 200px;
-  color: #1d3557;
-  font-size: 14px;
+  width: 100%;
   padding: 10px;
+  padding-top: 15px;
+  padding-top: 15px;
+  color: #1d3557;
+  font-size: 18px;
   text-align: left;
+  margin: 0;
 }
 .container-fluid .sideBar ul li button:hover {
   transition: 0.3sec ease;
   color: white;
   background-color: #457b9d;
+  border: none;
 }
-.container-fluid .row {
-  margin: 0;
-  width: 130%;
+.button {
+  border: none;
+  background: rgb(252, 250, 250);
+  width: 100%;
+}
+.button i {
+  float: right;
+  padding-top: 0.3rem;
+}
+.myBtnContainer.avtice {
+  color: white;
+  background-color: #457b9d !important;
+  border: none;
 }
 .container-fluid .filterDiv {
   position: relative;
@@ -186,6 +199,7 @@ section {
   max-width: 18rem;
   height: 22rem;
   box-shadow: 2px 2px 1px #607a8a27;
+  margin: 0 1rem 1rem 1rem;
 }
 /* .container .card:hover {
   -webkit-transform: scale(1.1);
@@ -193,7 +207,9 @@ section {
   transform: scale(1.1);
 } */
 .container-fluid .wrapper {
+  position: relative;
   width: 100%;
+  padding: 0;
   margin-bottom: 5rem;
 }
 .container-fuild .filterDiv .card .card-body {
@@ -306,16 +322,23 @@ footer ul li {
   }
   footer img {
     width: 50px;
+    padding-left: 0px;
   }
   .contact {
     padding-top: 2.5rem;
     background-color: #a8dadc;
+  }
+  footer ul li {
+    left: 20px;
+    top: -4px;
   }
 }
 @media (max-width: 767px) {
   #dailySpecials {
     height: 1200px;
   }
+
+  margin: 0 1rem 1rem 1rem;
 }
 
 /*************** NAVBAR MEDIA QUERIES **************
@@ -354,11 +377,217 @@ footer ul li {
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
+  .container-fluid .sideBar {
+    width: 450px;
+  }
+  .container-fluid .sideBar ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-top: 15px;
+    color: #1d3557;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+  }
 }
-footer ul li {
-  width: 80px;
-  height: 25px;
-  top: -5px;
-  padding-left: 20px;
-  display: inline-block;
+@media (max-width: 768px) {
+  .sideBar.hidden {
+    visibility: hidden;
+    display: none !important;
+  }
+  .container-fluid.wrapper {
+    padding-left: 0;
+    margin: auto;
+  }
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+  }
+  .container-fluid .wrapper .filterDiv .card {
+    margin: 1.25rem;
+  }
+  .container-fluid .filterDiv .card {
+    margin: 0 0.25rem 0.25rem 1rem;
+  }
+}
+@media (min-width: 769px) {
+  .sideBar.hidden {
+    visibility: visible;
+  }
+  .container-fluid .sideBar {
+    width: 350px;
+  }
+  .container-fluid .sideBar ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-top: 15px;
+    color: #1d3557;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+  }
+  .container-fluid .filterDiv .card .card-body .card-title {
+    font-size: 16px;
+  }
+  .container-fluid .filterDiv .card .card-body .description {
+    color: #1d3557;
+    font-size: 14px;
+  }
+  .price {
+    display: inline-block;
+    background-color: #f1faee;
+  }
+  .prices {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
+  .number {
+    color: #e63946;
+    background-color: #f1faee;
+  }
+  .container-fluid .filterDiv .card {
+    max-width: 13rem;
+    height: 20rem;
+    box-shadow: 2px 2px 1px #607a8a27;
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+@media (max-width: 1032px) {
+  .container-fluid .filterDiv .card .card-body .card-title {
+    font-size: 16px;
+  }
+  .container-fluid .filterDiv .card .card-body .description {
+    color: #1d3557;
+    font-size: 14px;
+  }
+  .price {
+    display: inline-block;
+    background-color: #f1faee;
+  }
+  .prices {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
+  .number {
+    color: #e63946;
+    background-color: #f1faee;
+  }
+  .container-fluid .filterDiv .card {
+    max-width: 13rem;
+    height: 20rem;
+    box-shadow: 2px 2px 1px #607a8a27;
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+@media (min-width: 1100px) {
+  .container-fluid .sideBar {
+    width: 550px;
+  }
+  .container-fluid .sideBar ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-top: 15px;
+    color: #1d3557;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+  }
+  .container-fluid .filterDiv .card {
+    max-width: 18rem;
+    height: 22rem;
+    box-shadow: 2px 2px 1px #607a8a27;
+    margin: 0 1rem 1rem 1rem;
+  }
+  /* .container .card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  } */
+  .container-fluid .wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  .container-fuild .filterDiv .card .card-body {
+    height: fit-content;
+    padding-top: 0.25rem;
+    padding-left: 0;
+    padding: 1rem;
+  }
+  .container-fluid .filterDiv .card .card-body .card-title {
+    text-emphasis: bold;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin: 0;
+  }
+  .container-fluid .filterDiv .card .card-body .card-text {
+    padding: 0;
+    margin: 0;
+    color: #457b9d;
+  }
+  /* .wrapper .category {
+    padding-top: 2rem;
+  } */
+  .container-fluid .filterDiv .card .card-body .description {
+    color: #1d3557;
+  }
+  .price {
+    display: inline-block;
+    background-color: #f1faee;
+  }
+  .prices {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding-bottom: 0;
+  }
+  .number {
+    color: #e63946;
+    background-color: #f1faee;
+  }
+}
+@media (min-width: 1600px) {
+  .sideBar {
+    width: 550px;
+  }
+  .container-fluid .sideBar ul li {
+    padding: 0;
+  }
+  .container-fluid .sideBar ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-top: 15px;
+    color: #1d3557;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+  }
+  .container-fluid .wrapper {
+    width: 100%;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  footer ul li {
+    width: 80px;
+    height: 25px;
+    top: -5px;
+    padding-left: 20px;
+    display: inline-block;
+  }
 }
