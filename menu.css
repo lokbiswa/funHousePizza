@@ -332,13 +332,42 @@ footer ul li {
     left: 20px;
     top: -4px;
   }
+  .container-fluid .wrapper .filterDiv .card .card-body .card-title {
+    font-size: 14px;
+  }
+  .container-fluid .wrapper .filterDiv .card .card-body .description {
+    color: #1d3557;
+    font-size: 12px;
+    visibility: hidden;
+    display: none;
+  }
+  .price {
+    display: inline-block;
+    background-color: #f1faee;
+    margin: 0;
+  }
+  .prices {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding-bottom: 0;
+    font-size: 10px;
+  }
+  .number {
+    color: #e63946;
+    background-color: #f1faee;
+  }
+  .container-fluid .wrapper .filterDiv .card {
+    max-width: 10rem;
+    height: 12rem;
+    box-shadow: 2px 2px 1px #607a8a27;
+    margin: auto;
+  }
 }
 @media (max-width: 767px) {
   #dailySpecials {
     height: 1200px;
   }
-
-  margin: 0 1rem 1rem 1rem;
 }
 
 /*************** NAVBAR MEDIA QUERIES **************
@@ -409,9 +438,6 @@ footer ul li {
   .container-fluid .wrapper .filterDiv .card {
     margin: 1.25rem;
   }
-  .container-fluid .filterDiv .card {
-    margin: 0 0.25rem 0.25rem 1rem;
-  }
 }
 @media (min-width: 769px) {
   .sideBar.hidden {
@@ -432,11 +458,11 @@ footer ul li {
     margin: 0;
   }
   .container-fluid .filterDiv .card .card-body .card-title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .container-fluid .filterDiv .card .card-body .description {
     color: #1d3557;
-    font-size: 14px;
+    font-size: 12px;
   }
   .price {
     display: inline-block;
@@ -447,15 +473,15 @@ footer ul li {
     bottom: 0;
     right: 10px;
     padding-bottom: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
   .number {
     color: #e63946;
     background-color: #f1faee;
   }
   .container-fluid .filterDiv .card {
-    max-width: 13rem;
-    height: 20rem;
+    max-width: 8rem;
+    height: 12rem;
     box-shadow: 2px 2px 1px #607a8a27;
     margin: 0 1rem 1rem 1rem;
   }
