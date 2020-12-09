@@ -145,14 +145,14 @@
     <div class="container-fluid">
       <div class="sideBar hidden d-none d-sm-block">
         <ul id="myBtnContainer container-fluid">
-          <li><button class="button active" onclick="filterSelection('all')" >ALL ITEMS<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('pizzas')" >PIZZAS<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('salad')" >FUN HOUSE SALADS<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('sandwiches')">SANDWICHES<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('munchies')" >FUN HOUSE MUNCHERS<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('kid')">FUN HOUSE KID'S MEALS<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('chicken')">CHRISPY FRIED CHICKEN<i class="fas fa-angle-right"></i></button></li>
-          <li><button class="button" onclick="filterSelection('beverages')">BEVERAGES<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button active" onclick="filterDiv('all')" >ALL ITEMS<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('pizzas')" >PIZZAS<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('salad')" >FUN HOUSE SALADS<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('sandwiches')">SANDWICHES<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('munchies')" >FUN HOUSE MUNCHERS<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('kid')">FUN HOUSE KID'S MEALS<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('chicken')">CHRISPY FRIED CHICKEN<i class="fas fa-angle-right"></i></button></li>
+          <li><button class="button" onclick="filterDiv('beverages')">BEVERAGES<i class="fas fa-angle-right"></i></button></li>
         </ul>
       </div>
       <div class="wrapper d-none d-sm-block  justify-content-center">
@@ -658,15 +658,18 @@
             </div>
           </div>
         </div>
+        <div class="backto-top">
+        </div>
       </div>
     </div>
-  <footer>
-    <ul>
-        <li><a href="https://www.facebook.com/FunHousePizzaPub/"><img src="asset/img/facebookLogo.svg" alt="facebook logo"></a></li>
-        <li><a href="https://www.yelp.com/biz/fun-house-pizza-and-pub-independence"><img src="asset/img/yelpLogo.svg" alt="yelp logo"></a></li>
-    </ul>
-    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+          <ul>
+              <a href="https://www.facebook.com/FunHousePizzaPub/"><img src="images/facebookLogo.svg" alt="facebook logo"></a>
+              <a href="https://www.yelp.com/biz/fun-house-pizza-and-pub-independence"><img src="images/yelpLogo.svg" alt="yelp logo"></a>
+          </ul>
+    </footer>
+  <script src="menuScript.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Third party plugin JS-->
