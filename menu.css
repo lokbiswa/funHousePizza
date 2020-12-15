@@ -432,8 +432,8 @@ footer img {
 }
 @media (max-width: 768px) {
   .sideBar.hidden {
-    visibility: hidden;
-    display: none !important;
+    visibility:  visible;
+    /* display: none !important; */
   }
   .container-fluid.wrapper {
     padding-left: 0;
