@@ -27,9 +27,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
         <!-- ---- SHOW WHICH PAGE IS CURRENTLY ACTIVE BY MOVING THE WORD "ACTIVE" (COMES AFTER THE CLASS "NAV-LINK") TO YOUR PAGE LINK IN THE LIST BELOW-->               
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active js-scroll-trigger" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active js-scroll-trigger" href="./menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./about.html">About Us</a></li>
                 </ul>
             </div>
           </div>
@@ -144,8 +144,8 @@
 <!--Side filter bar-->
     <div class="container-fluid">
       <div class="sideBar hidden d-none d-sm-block">
-        <ul id="myBtnContainer container-fluid">
-          <li><button class="button active" onclick="filterSelection('all')" >ALL ITEMS<i class="fas fa-angle-right"></i></button></li>
+        <ul id="myBtnContainer">
+          <li><button class="button current" onclick="filterSelection('all')" >ALL ITEMS<i class="fas fa-angle-right"></i></button></li>
           <li><button class="button" onclick="filterSelection('pizzas')" >PIZZAS<i class="fas fa-angle-right"></i></button></li>
           <li><button class="button" onclick="filterSelection('salad')" >FUN HOUSE SALADS<i class="fas fa-angle-right"></i></button></li>
           <li><button class="button" onclick="filterSelection('sandwiches')">SANDWICHES<i class="fas fa-angle-right"></i></button></li>
@@ -675,6 +675,6 @@
   <script src="assets/mail/jqBootstrapValidation.js"></script>
   <script src="assets/mail/contact_me.js"></script>
   <!-- Core theme JS-->
-  <script src="scripts.js"></script>
+  <script src="./menuScript.js"></script>
 </body>
 </html>
